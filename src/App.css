@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: #142338;
+}
+.container{
+  background-color: #f0ebd8;
+  width: 280px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.lista{
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 5px;
+  height:300px ;
+  overflow: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.App-link {
-  color: #61dafb;
+.lista::-webkit-scrollbar{
+  display: none;
+}
+.item{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.item+.item{
+  margin-top: 5px;
+  border-top: 1px solid #ccac85;
+  padding-top: 5px;
+}
+.inputBotao{
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+
+}
+.btn{
+  background-color: #4CAF50; 
+  color: white;             
+  padding: 5px 3px;        
+  border: none;           
+  border-radius: 5px;        
+  cursor: pointer;           
+  font-size: 16px;           
+  transition: background-color 0.3s ease;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnDelete{
+  background-color: #e70505; 
+  color: white;             
+  padding: 4px 3px;        
+  border: none;           
+  border-radius: 5px;        
+  cursor: pointer;           
+  font-size: 16px;           
+  transition: background-color 0.3s ease;
+}
+.titulo{
+  color: #142338;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#input{
+  box-shadow: #142338;
+  border-radius: 3px;
 }
