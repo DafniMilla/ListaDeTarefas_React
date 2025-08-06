@@ -44,13 +44,7 @@ Permite adicionar e remover tarefas, com validação para evitar erros.
 ````npm install````
 
 5 Executar aplicação
-````npm run dev````
-
-Após isso, abra o navegador e acesse:
-
-http://localhost:5173
-
-(ou a porta indicada no terminal)
+````npm start````
 
 ----
 
